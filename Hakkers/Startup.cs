@@ -39,7 +39,7 @@ namespace Hakkers
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<IdentityDbContext>();
+                .AddEntityFrameworkStores<AspNetProjectContext>();
                 //.AddDefaultUI(UIFramework.Bootstrap4)
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
